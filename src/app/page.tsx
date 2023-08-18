@@ -1,6 +1,26 @@
+import Logo from "@/components/Logo";
+import IconDocument from "@/components/IconDocument";
+import IconFile from "@/components/IconFile";
+import IconUpload from "@/components/IconUpload";
+
 export default function Home() {
     return (
-        <main className="flex items-center justify-center min-h-screen">
+        <main className="flex items-center justify-center min-h-screen gap-10 flex-wrap">
+            <div className="grid gap-8 max-w-[350px] w-full rounded-xl rounded-tr-[7.5rem] bg-app-blue-700 p-8">
+                <Logo />
+                <ul className="flex gap-4">
+                    <li className="rounded-xl bg-app-blue-900 p-3 flex items-center justify-center">
+                        <IconDocument />
+                    </li>
+                    <li className="rounded-xl bg-app-blue-900 p-3 flex items-center justify-center">
+                        <IconFile />
+                    </li>
+                    <li className="rounded-xl bg-app-blue-900 p-3 flex items-center justify-center">
+                        <IconUpload />
+                    </li>
+                </ul>
+            </div>
+
             <div className="relative grid gap-4 max-w-screen-sm bg-app-blue-700 p-8 rounded-xl w-full">
                 <div className="flex gap-2 items-center bg-white rounded-[.625rem] absolute right-8 -top-12 text-app-blue-900 p-4">
                     <h3 className="text-[2.5rem] leading-none">185</h3>
