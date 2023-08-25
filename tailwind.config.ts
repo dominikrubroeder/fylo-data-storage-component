@@ -23,7 +23,6 @@ const config: Config = {
       animation: {
         "move-horizontally": "move-horizontally 24s linear infinite",
         "move-vertically": "move-vertically 24s linear infinite",
-        scale: "scale 24s linear infinite",
       },
       keyframes: {
         "move-horizontally": {
@@ -33,10 +32,6 @@ const config: Config = {
         "move-vertically": {
           "0%, 100%": { transform: "translateY(4rem)" },
           "50%": { transform: "translateY(-4rem)" },
-        },
-        scale: {
-          "0%, 100%": { transform: "scale(1.08)" },
-          "50%": { transform: "scale(1)" },
         },
       },
     },
