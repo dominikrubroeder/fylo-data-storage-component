@@ -23,7 +23,7 @@ export default function RootLayout({
         {children}
         <BackgroundGradient
           level={1}
-          className="absolute bottom-0 -z-10 overflow-visible"
+          className="absolute bottom-0 -z-10 overflow-visible animate-move-horizontally"
         />
         <BackgroundGradient
           level={2}
@@ -31,7 +31,7 @@ export default function RootLayout({
         />
         <BackgroundGradient
           level={3}
-          className="absolute bottom-0 -z-10 overflow-visible"
+          className="absolute bottom-0 -z-10 overflow-visible animate-move-vertically"
         />
       </body>
     </html>
